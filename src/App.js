@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./components/Homepage/Homepage";
 import Nav from "./components/pages/Navigation";
 import Footer from "./components/pages/Footer";
-// import Whatsapp from "./components/pages/whatsapp";
+import Whatsapp from "./components/pages/whatsapp";
 import ScrollToTop from "./components/pages/scrolltotop";
 import SEO from "./components/SEO"; // Fixed import path
 
@@ -30,7 +30,7 @@ function App() {
        
       </Routes>
 
-      {/* <Whatsapp /> */}
+       <Whatsapp />
       <ScrollToTop />
       <Footer />
     </Router>
