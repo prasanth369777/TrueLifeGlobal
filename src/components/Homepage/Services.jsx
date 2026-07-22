@@ -97,7 +97,7 @@ export default function ServicesAndProcess() {
             {services.map((service) => (
               <article
                 key={service.id}
-                className="group relative flex flex-col justify-between overflow-hidden rounded-[2rem] bg-slate-900 shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_50px_-12px_rgba(30,58,138,0.3)] h-[540px] border border-slate-800"
+                className="group relative flex flex-col justify-between overflow-hidden bg-slate-900 shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_50px_-12px_rgba(30,58,138,0.3)] h-[540px] border border-slate-800"
               >
                 {/* Background Image with Deep Gradient Overlay */}
                 <img
@@ -109,7 +109,7 @@ export default function ServicesAndProcess() {
 
                 {/* Top Header Badge */}
                 <div className="relative z-10 p-8 flex items-center justify-between">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 text-sm font-black text-white backdrop-blur-md border border-white/20 shadow-lg">
+                  <span className="flex h-12 w-12 items-center justify-center  bg-white/10 text-sm font-black text-white backdrop-blur-md border border-white/20 shadow-lg">
                     {service.id}
                   </span>
                   <span className="rounded-full bg-blue-600/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-300 backdrop-blur-sm border border-blue-500/30">
@@ -133,7 +133,7 @@ export default function ServicesAndProcess() {
 
                   <a
                     href="mailto:contact@truelifeglobal.com"
-                    className="group/btn inline-flex items-center justify-between rounded-2xl border border-white/20 bg-white/10 px-6 py-4 text-xs font-bold uppercase tracking-widest text-white backdrop-blur-md transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 shadow-xl"
+                    className="group/btn inline-flex items-center justify-between  border border-white/20 bg-white/10 px-6 py-4 text-xs font-bold uppercase tracking-widest text-white backdrop-blur-md transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 shadow-xl"
                   >
                     <span>Enquire Securely</span>
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
@@ -169,7 +169,7 @@ export default function ServicesAndProcess() {
                     <span className="text-5xl font-black text-blue-600/20 group-hover:text-blue-600/40 transition-colors">
                       {item.step}
                     </span>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 shadow-inner group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                    <div className="flex h-12 w-12 items-center justify-center  bg-blue-50 text-blue-600 shadow-inner group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
                       <Checkmark className="h-6 w-6" />
                     </div>
                   </div>

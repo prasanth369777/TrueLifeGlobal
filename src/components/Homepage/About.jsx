@@ -118,7 +118,7 @@ export default function About() {
         </div>
 
         {/* ================= CENTRAL IMAGE WITH MOTION GRAPHICS ================= */}
-        <div className="relative w-full h-[50vh] md:h-[70vh] xl:h-[80vh] rounded-[2rem] md:rounded-[3rem] overflow-hidden mb-32 shadow-2xl group">
+        <div className="relative w-full h-[50vh] md:h-[70vh] xl:h-[80vh] overflow-hidden mb-32 shadow-2xl group">
           {/* Base Image with Cinematic Zoom */}
           <img 
             src={CenterImage} 
@@ -130,7 +130,7 @@ export default function About() {
           
           {/* Floating UI Elements (Motion Graphic Badges) */}
           <div className="absolute top-10 left-10 md:top-16 md:left-16 animate-float">
-            <div className="flex items-center gap-4 rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-md shadow-2xl">
+            <div className="flex items-center gap-4  border border-white/20 bg-white/10 p-5 backdrop-blur-md shadow-2xl">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
                 <CheckmarkFilled className="h-6 w-6" />
               </div>
@@ -142,7 +142,7 @@ export default function About() {
           </div>
 
           <div className="absolute bottom-10 right-10 md:bottom-16 md:right-16 animate-float-delayed">
-            <div className="flex items-center gap-4 rounded-2xl border border-white/20 bg-black/20 p-5 backdrop-blur-md shadow-2xl">
+            <div className="flex items-center gap-4  border border-white/20 bg-black/20 p-5 backdrop-blur-md shadow-2xl">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-blue-600">
                 <ChartLine className="h-6 w-6" />
               </div>
@@ -182,12 +182,12 @@ export default function About() {
         {/* ================= VISION & MISSION ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 mb-32">
           {/* Vision Card */}
-          <div className="relative flex flex-col justify-center overflow-hidden rounded-3xl bg-slate-900 p-12 md:p-16 xl:p-20 shadow-2xl transition-transform hover:-translate-y-2 duration-500">
+          <div className="relative flex flex-col justify-center overflow-hidden  bg-slate-900 p-12 md:p-16 xl:p-20 shadow-2xl transition-transform hover:-translate-y-2 duration-500">
             <div className="absolute top-0 right-0 p-12 opacity-[0.07] pointer-events-none">
-              <Idea className="h-48 w-48 text-white" />
+             
             </div>
             <div className="relative z-10">
-              <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-blue-500/20 text-blue-400">
+              <div className="mb-8 inline-flex h-16 w-16 items-center justify-center  bg-blue-500/20 text-blue-400">
                 <Idea className="h-8 w-8" />
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-8">Our Vision</h3>
@@ -198,12 +198,12 @@ export default function About() {
           </div>
 
           {/* Mission Card */}
-          <div className="relative flex flex-col justify-center overflow-hidden rounded-3xl bg-blue-600 p-12 md:p-16 xl:p-20 shadow-2xl shadow-blue-600/20 transition-transform hover:-translate-y-2 duration-500">
+          <div className="relative flex flex-col justify-center overflow-hidden  bg-blue-600 p-12 md:p-16 xl:p-20 shadow-2xl shadow-blue-600/20 transition-transform hover:-translate-y-2 duration-500">
             <div className="absolute top-0 right-0 p-12 opacity-10 pointer-events-none">
-              <Task className="h-48 w-48 text-white" />
+             
             </div>
             <div className="relative z-10">
-              <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-white/20 text-white backdrop-blur-sm">
+              <div className="mb-8 inline-flex h-16 w-16 items-center justify-center  bg-white/20 text-white backdrop-blur-sm">
                 <Task className="h-8 w-8" />
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-8">Our Mission</h3>
@@ -224,7 +224,7 @@ export default function About() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {coreValues.map((val, index) => (
-                <div key={index} className="rounded-2xl border border-slate-100 bg-slate-50 p-8 md:p-10 transition-all duration-300 hover:shadow-xl hover:bg-white hover:-translate-y-1">
+                <div key={index} className=" border border-slate-100 bg-slate-50 p-8 md:p-10 transition-all duration-300 hover:shadow-xl hover:bg-white hover:-translate-y-1">
                   <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
                     <val.icon className="h-7 w-7" />
                   </div>
