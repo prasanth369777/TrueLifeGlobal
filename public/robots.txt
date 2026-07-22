@@ -1,0 +1,9 @@
+# Allow all crawlers
+User-agent: *
+
+# Sitemaps
+Sitemap: https://www.bspxstudio.com/sitemap.xml
+
+# Paths to disallow (optional - leave empty if you want everything indexed)
+# Disallow: /admin
+# Disallow: /private

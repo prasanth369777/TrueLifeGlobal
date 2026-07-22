@@ -1,0 +1,126 @@
+{
+  "name": "True Life Global | Accounting, Audit & Tax Services Singapore",
+  "short_name": "True Life Global",
+  "description": "True Life Global Pte. Ltd. is an ACRA-registered Singapore firm offering professional accounting, auditing, tax consultancy, and courier services. Trusted by SMEs and startups across Singapore.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "categories": ["business", "finance", "accounting", "tax", "consulting", "professional-services"],
+  "lang": "en-SG",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "True Life Global - Professional Accounting & Audit Services Singapore"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "True Life Global - Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Request a Quote",
+      "short_name": "Quote",
+      "description": "Request a free consultation for accounting, audit, tax or courier services",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "Explore our accounting, audit, tax consultancy, and courier services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "About Us",
+      "short_name": "About",
+      "description": "Learn about True Life Global Pte. Ltd. - ACRA registered Singapore firm",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with True Life Global's professional team",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "short_name": "FAQ",
+      "description": "Frequently asked questions about our services",
+      "url": "/faq",
+      "icons": [
+        {
+          "src": "/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "iarc_rating_id": "",
+  "display_override": ["standalone", "fullscreen"]
+}
