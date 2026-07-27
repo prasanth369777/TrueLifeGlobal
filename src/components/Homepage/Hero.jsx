@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback, useRef } from "react";
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "@carbon/icons-react";
 
 // Placeholder imports for your 3 corporate images. 
 // Replace these paths with your actual professional/corporate images.
@@ -15,7 +15,6 @@ const slides = [
     shortTitle: "Accounting & Audit",
     desc: "We are an ACRA-registered Singapore firm offering professional accounting, auditing, tax consultancy, and courier services tailored for your business growth.",
     img: CorporateImg1,
-    
   },
   {
     id: 2,
@@ -24,7 +23,6 @@ const slides = [
     shortTitle: "Tax Consultancy",
     desc: "Strategic tax planning and strict compliance services designed to optimize your financial standing in Singapore's dynamic market.",
     img: CorporateImg2,
-  
   },
   {
     id: 3,
@@ -33,7 +31,6 @@ const slides = [
     shortTitle: "Courier & Support",
     desc: "Beyond numbers, we ensure your daily operations run smoothly with our dedicated corporate courier and logistical support services.",
     img: CorporateImg3,
-    
   },
 ];
 
@@ -61,11 +58,11 @@ const AnimatedCounter = ({ target, suffix = "", label }) => {
 
   return (
     <div className="flex flex-col border-l border-white/20 pl-4 sm:pl-6">
-      <div className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+      <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-['Poppins',sans-serif]">
         {count}
         <span className="text-blue-400">{suffix}</span>
       </div>
-      <p className="mt-1 text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-blue-100/70">
+      <p className="mt-1 text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-blue-100/70 font-['Poppins',sans-serif]">
         {label}
       </p>
     </div>
@@ -114,11 +111,13 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-slate-900 text-white selection:bg-blue-600 selection:text-white"
+      id="home"
+      className="relative w-full overflow-hidden bg-slate-900 text-white selection:bg-blue-600 selection:text-white font-['Inter','Poppins',sans-serif]"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <div className="relative min-h-[100svh] w-full flex flex-col justify-center">
+      {/* Balanced height padding */}
+      <div className="relative w-full flex flex-col justify-center py-28 lg:py-36">
         
         {/* ================= CORPORATE BACKGROUND OVERLAYS ================= */}
         <div className="absolute inset-0 z-0">
@@ -138,56 +137,58 @@ export default function Hero() {
                 loading={index === 0 ? "eager" : "lazy"}
               />
               {/* Professional Blue-Tinted Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0a192f]/95 via-[#0a192f]/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0a192f]/95 via-[#0a192f]/85 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a192f] via-transparent to-black/20" />
             </div>
           ))}
         </div>
 
         {/* ================= MAIN CONTENT ================= */}
-        <div className="relative z-20 mx-auto w-full max-w-[1400px] px-6 pb-32 pt-32 sm:px-12 lg:px-16 flex flex-col justify-center min-h-screen">
+        <div className="relative z-20 mx-auto w-full max-w-[1400px] px-6 sm:px-12 lg:px-16 flex flex-col justify-center py-16">
           <div className="w-full max-w-2xl lg:max-w-3xl">
             
             {/* Tagline */}
-            <div className="flex items-center gap-4 mb-6 overflow-hidden">
+            <div className="flex items-center gap-4 mb-5 overflow-hidden">
               <div className="h-px w-10 bg-blue-500" />
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-blue-400">
+              <span className="text-xs font-bold uppercase tracking-[0.25em] text-blue-400 font-['Poppins',sans-serif]">
                 {slides[current].tag}
               </span>
             </div>
 
             {/* Main Title */}
-            <h1 className="whitespace-pre-line text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] tracking-tight text-white mb-6">
+            <h1 className="whitespace-pre-line text-4xl sm:text-6xl md:text-7xl font-extrabold leading-[1.1] tracking-tight text-white mb-6 font-['Poppins',sans-serif]">
               {slides[current].title}
             </h1>
 
             {/* Description / Intro */}
-            <p className="text-base sm:text-lg font-normal leading-relaxed text-blue-50/80 max-w-xl mb-12">
+            <p className="text-base sm:text-lg font-light leading-relaxed text-blue-50/80 max-w-xl mb-10">
               {slides[current].desc}
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 mb-16">
+            <div className="flex flex-col sm:flex-row items-center gap-4 mb-14">
               <button
+                type="button"
                 onClick={() => window.location.href = "mailto:contact@truelifeglobal.com"}
-                className="group relative flex w-full sm:w-auto items-center justify-center gap-3 overflow-hidden rounded-md bg-blue-600 px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/30"
+                className="group relative flex w-full sm:w-auto items-center justify-center gap-3 overflow-hidden bg-blue-600 px-8 py-4 text-xs font-bold uppercase tracking-widest text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-600/30 cursor-pointer font-['Poppins',sans-serif]"
               >
                 <span>Get a Free Quote</span>
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </button>
 
               <button
+                type="button"
                 onClick={scrollToServices}
-                className="group flex w-full sm:w-auto items-center justify-center rounded-md border border-white/20 bg-white/5 px-8 py-4 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
+                className="group flex w-full sm:w-auto items-center justify-center border border-white/20 bg-white/5 px-8 py-4 text-xs font-bold uppercase tracking-widest text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10 cursor-pointer font-['Poppins',sans-serif]"
               >
                 Explore Services
               </button>
             </div>
 
             {/* ================= ANIMATED STATS ROW ================= */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 pt-8 border-t border-white/10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-white/10">
               <AnimatedCounter target={4} label="Core Services" />
-              <AnimatedCounter target={50} suffix="K+" label="Paid-Up Capital (SGD)" />
+              <AnimatedCounter target={100} suffix="K+" label="Paid-Up Capital (SGD)" />
               <AnimatedCounter target={100} suffix="%" label="ACRA Registered" />
               <AnimatedCounter target={100} suffix="%" label="Compliance Focus" />
             </div>
@@ -196,24 +197,22 @@ export default function Hero() {
         </div>
 
         {/* ================= BOTTOM NAVIGATION TABS ================= */}
-        <div className="absolute bottom-0 left-0 right-0 z-30 bg-gradient-to-t from-[#0a192f] to-transparent pt-20 pb-8 px-6 sm:px-12 lg:px-16">
-          <div className="mx-auto max-w-[1400px] flex flex-col md:flex-row items-end justify-between gap-8">
+        <div className="relative z-30 pt-10 pb-6 px-6 sm:px-12 lg:px-16 border-t border-white/10 bg-[#0a192f]/60 backdrop-blur-md">
+          <div className="mx-auto max-w-[1400px] flex flex-col md:flex-row items-center justify-between gap-6">
             
             {/* Slide Progress Indicators */}
             <div className="flex items-center gap-4 w-full md:w-auto md:min-w-[500px]">
               {slides.map((slide, index) => (
                 <button
                   key={slide.id}
+                  type="button"
                   onClick={() => setCurrent(index)}
-                  className="group relative flex-1 flex flex-col justify-end pb-3"
+                  className="group relative flex-1 flex flex-col justify-end pb-2 bg-transparent border-0 cursor-pointer text-left"
                   aria-label={`Go to slide ${index + 1}`}
                 >
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className={`transition-colors duration-300 ${current === index ? "text-blue-400" : "text-white/40"}`}>
-                      {slide.icon}
-                    </div>
+                  <div className="flex items-center gap-2 mb-2">
                     <span
-                      className={`text-left text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
+                      className={`text-xs font-semibold uppercase tracking-wider transition-all duration-300 font-['Poppins',sans-serif] ${
                         current === index ? "text-white" : "text-white/40 group-hover:text-white/70"
                       }`}
                     >
@@ -222,9 +221,9 @@ export default function Hero() {
                   </div>
 
                   {/* Progress Bar */}
-                  <div className="relative w-full h-1 bg-white/10 rounded-full overflow-hidden">
+                  <div className="relative w-full h-1 bg-white/10 overflow-hidden">
                     <div
-                      className={`absolute top-0 left-0 h-full bg-blue-500 rounded-full transition-transform duration-[6000ms] ease-linear origin-left ${
+                      className={`absolute top-0 left-0 h-full bg-blue-500 transition-transform duration-[6000ms] ease-linear origin-left ${
                         current === index ? "scale-x-100" : "scale-x-0 duration-300"
                       }`}
                     />
@@ -236,21 +235,26 @@ export default function Hero() {
             {/* Navigation Arrows */}
             <div className="hidden md:flex items-center gap-3">
               <button
+                type="button"
                 onClick={prevSlide}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 backdrop-blur-md transition-all hover:bg-white hover:text-blue-900"
+                className="flex h-10 w-10 items-center justify-center border border-white/20 bg-white/5 backdrop-blur-md transition-all hover:bg-white hover:text-blue-900 cursor-pointer"
+                aria-label="Previous slide"
               >
-                <ChevronLeft className="h-5 w-5" />
+                <ChevronLeft className="h-4 w-4" />
               </button>
               <button
+                type="button"
                 onClick={nextSlide}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 backdrop-blur-md transition-all hover:bg-white hover:text-blue-900"
+                className="flex h-10 w-10 items-center justify-center border border-white/20 bg-white/5 backdrop-blur-md transition-all hover:bg-white hover:text-blue-900 cursor-pointer"
+                aria-label="Next slide"
               >
-                <ChevronRight className="h-5 w-5" />
+                <ChevronRight className="h-4 w-4" />
               </button>
             </div>
             
           </div>
         </div>
+
       </div>
     </section>
   );

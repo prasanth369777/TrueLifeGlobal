@@ -2,7 +2,7 @@
 User-agent: *
 
 # Sitemaps
-Sitemap: https://www.bspxstudio.com/sitemap.xml
+Sitemap: https://www.TrueLifeGlobal.com/sitemap.xml
 
 # Paths to disallow (optional - leave empty if you want everything indexed)
 # Disallow: /admin

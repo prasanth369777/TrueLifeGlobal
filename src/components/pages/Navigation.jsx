@@ -88,7 +88,7 @@ export default function Navigation() {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full bg-white transition-all duration-300 ${
+      className={`fixed left-0 top-0 z-50 w-full bg-white transition-all duration-300 font-['Inter','Poppins',sans-serif] ${
         scrolled ? "border-b border-gray-100 shadow-sm py-3" : "py-5"
       }`}
     >
@@ -118,7 +118,7 @@ export default function Navigation() {
               key={link.name}
               type="button"
               onClick={() => scrollToSection(link.target)}
-              className="text-[15px] font-medium text-slate-600 transition-colors duration-200 hover:text-blue-600 focus:outline-none bg-transparent border-0 cursor-pointer"
+              className="text-[15px] font-medium text-slate-600 transition-colors duration-200 hover:text-[#207dd6] focus:outline-none bg-transparent border-0 cursor-pointer font-['Poppins',sans-serif]"
             >
               {link.name}
             </button>
@@ -130,8 +130,8 @@ export default function Navigation() {
               type="button"
               onMouseEnter={() => setServicesOpen(true)}
               onClick={() => setServicesOpen((prev) => !prev)}
-              className={`text-[15px] font-medium transition-colors duration-200 focus:outline-none bg-transparent border-0 cursor-pointer ${
-                servicesOpen ? "text-blue-600" : "text-slate-600 hover:text-blue-600"
+              className={`text-[15px] font-medium transition-colors duration-200 focus:outline-none bg-transparent border-0 cursor-pointer font-['Poppins',sans-serif] ${
+                servicesOpen ? "text-[#207dd6]" : "text-slate-600 hover:text-[#207dd6]"
               }`}
             >
               Services
@@ -143,7 +143,7 @@ export default function Navigation() {
               key={link.name}
               type="button"
               onClick={() => scrollToSection(link.target)}
-              className="text-[15px] font-medium text-slate-600 transition-colors duration-200 hover:text-blue-600 focus:outline-none bg-transparent border-0 cursor-pointer"
+              className="text-[15px] font-medium text-slate-600 transition-colors duration-200 hover:text-[#207dd6] focus:outline-none bg-transparent border-0 cursor-pointer font-['Poppins',sans-serif]"
             >
               {link.name}
             </button>
@@ -155,7 +155,8 @@ export default function Navigation() {
           <button
             type="button"
             onClick={() => scrollToSection("quote")}
-            className="rounded bg-blue-600 px-7 py-3 text-[14px] font-semibold tracking-wide text-white transition-all duration-200 hover:bg-blue-700 active:scale-95"
+            style={{ backgroundColor: "#207dd6" }}
+            className="rounded px-7 py-3 text-[14px] font-semibold tracking-wide text-white transition-all duration-200 hover:opacity-90 active:scale-95 font-['Poppins',sans-serif] shadow-md shadow-[#207dd6]/20"
           >
             Get a Free Quote
           </button>
@@ -186,11 +187,11 @@ export default function Navigation() {
         <div className="mx-auto flex w-full max-w-[1400px] gap-16 px-6 py-12 md:px-12 lg:px-16 xl:px-24">
           
           <div className="w-1/3 border-r border-gray-100 pr-12">
-            <h3 className="text-3xl font-light tracking-tight text-slate-900">
+            <h3 className="text-3xl font-light tracking-tight text-slate-900 font-['Poppins',sans-serif]">
               Clarity Today. <br />
-              <span className="font-semibold text-blue-600">Growth Tomorrow.</span>
+              <span className="font-semibold text-[#207dd6]">Growth Tomorrow.</span>
             </h3>
-            <p className="mt-5 text-[15px] leading-relaxed text-slate-500">
+            <p className="mt-5 text-[15px] leading-relaxed text-slate-500 font-light">
               Strategic guidance, financial advisory, and operations scaling
               for businesses looking to optimize growth globally.
             </p>
@@ -200,7 +201,7 @@ export default function Navigation() {
                 setServicesOpen(false);
                 scrollToSection("services");
               }}
-              className="mt-8 inline-block text-[14px] font-semibold tracking-wide text-blue-600 transition-colors hover:text-blue-800 focus:outline-none bg-transparent border-0 cursor-pointer"
+              className="mt-8 inline-block text-[14px] font-semibold tracking-wide text-[#207dd6] transition-colors hover:opacity-80 focus:outline-none bg-transparent border-0 cursor-pointer font-['Poppins',sans-serif]"
             >
               View All Services
             </button>
@@ -208,7 +209,7 @@ export default function Navigation() {
 
           <div className="flex w-2/3 justify-between gap-8">
             <div className="w-1/3">
-              <h4 className="mb-6 text-[12px] font-bold uppercase tracking-widest text-slate-400">
+              <h4 className="mb-6 text-[12px] font-bold uppercase tracking-widest text-slate-400 font-['Poppins',sans-serif]">
                 Strategy
               </h4>
               <ul className="space-y-4">
@@ -216,7 +217,7 @@ export default function Navigation() {
                   <li key={service.name}>
                     <NavLink
                       to={service.path}
-                      className="text-[15px] font-medium text-slate-600 transition-colors hover:text-blue-600"
+                      className="text-[15px] font-medium text-slate-600 transition-colors hover:text-[#207dd6]"
                     >
                       {service.name}
                     </NavLink>
@@ -226,7 +227,7 @@ export default function Navigation() {
             </div>
 
             <div className="w-1/3">
-              <h4 className="mb-6 text-[12px] font-bold uppercase tracking-widest text-slate-400">
+              <h4 className="mb-6 text-[12px] font-bold uppercase tracking-widest text-slate-400 font-['Poppins',sans-serif]">
                 Operations
               </h4>
               <ul className="space-y-4">
@@ -234,7 +235,7 @@ export default function Navigation() {
                   <li key={service.name}>
                     <NavLink
                       to={service.path}
-                      className="text-[15px] font-medium text-slate-600 transition-colors hover:text-blue-600"
+                      className="text-[15px] font-medium text-slate-600 transition-colors hover:text-[#207dd6]"
                     >
                       {service.name}
                     </NavLink>
@@ -244,7 +245,7 @@ export default function Navigation() {
             </div>
 
             <div className="w-1/3">
-              <h4 className="mb-6 text-[12px] font-bold uppercase tracking-widest text-slate-400">
+              <h4 className="mb-6 text-[12px] font-bold uppercase tracking-widest text-slate-400 font-['Poppins',sans-serif]">
                 Growth
               </h4>
               <ul className="space-y-4">
@@ -252,7 +253,7 @@ export default function Navigation() {
                   <li key={service.name}>
                     <NavLink
                       to={service.path}
-                      className="text-[15px] font-medium text-slate-600 transition-colors hover:text-blue-600"
+                      className="text-[15px] font-medium text-slate-600 transition-colors hover:text-[#207dd6]"
                     >
                       {service.name}
                     </NavLink>
@@ -282,7 +283,7 @@ export default function Navigation() {
                   closeMobileMenu();
                   scrollToSection(link.target);
                 }}
-                className="block w-full text-left py-3 text-[16px] font-medium text-slate-800 transition-colors hover:text-blue-600 focus:outline-none bg-transparent border-0 cursor-pointer"
+                className="block w-full text-left py-3 text-[16px] font-medium text-slate-800 transition-colors hover:text-[#207dd6] focus:outline-none bg-transparent border-0 cursor-pointer font-['Poppins',sans-serif]"
               >
                 {link.name}
               </button>
@@ -291,7 +292,7 @@ export default function Navigation() {
             <button
               type="button"
               onClick={() => setMobileServicesOpen((prev) => !prev)}
-              className="flex w-full items-center justify-between py-3 text-[16px] font-medium text-slate-800 transition hover:text-blue-600 bg-transparent border-0 cursor-pointer"
+              className="flex w-full items-center justify-between py-3 text-[16px] font-medium text-slate-800 transition hover:text-[#207dd6] bg-transparent border-0 cursor-pointer font-['Poppins',sans-serif]"
             >
               Services
               <span className="text-2xl font-light leading-none text-slate-400">
@@ -310,7 +311,7 @@ export default function Navigation() {
                     key={service.name}
                     to={service.path}
                     onClick={closeMobileMenu}
-                    className="block py-2 text-[15px] font-medium text-slate-600 transition-colors hover:text-blue-600"
+                    className="block py-2 text-[15px] font-medium text-slate-600 transition-colors hover:text-[#207dd6]"
                   >
                     {service.name}
                   </NavLink>
@@ -326,7 +327,7 @@ export default function Navigation() {
                   closeMobileMenu();
                   scrollToSection(link.target);
                 }}
-                className="block w-full text-left py-3 text-[16px] font-medium text-slate-800 transition-colors hover:text-blue-600 focus:outline-none bg-transparent border-0 cursor-pointer"
+                className="block w-full text-left py-3 text-[16px] font-medium text-slate-800 transition-colors hover:text-[#207dd6] focus:outline-none bg-transparent border-0 cursor-pointer font-['Poppins',sans-serif]"
               >
                 {link.name}
               </button>
@@ -338,11 +339,11 @@ export default function Navigation() {
           <div>
             <a
               href="mailto:contact@truelifeglobal.com"
-              className="block text-[15px] font-medium text-blue-600 transition-colors hover:text-blue-800"
+              className="block text-[15px] font-medium text-[#207dd6] transition-colors hover:opacity-80"
             >
               contact@truelifeglobal.com
             </a>
-            <p className="mt-2 text-[14px] text-slate-500">
+            <p className="mt-2 text-[14px] text-slate-500 font-light">
               Singapore | Serving Globally
             </p>
           </div>
@@ -353,7 +354,8 @@ export default function Navigation() {
               scrollToSection("quote");
               closeMobileMenu();
             }}
-            className="mt-8 flex w-full justify-center bg-blue-600 px-6 py-4 text-[15px] font-semibold text-white transition hover:bg-blue-700"
+            style={{ backgroundColor: "#207dd6" }}
+            className="mt-8 flex w-full justify-center px-6 py-4 text-[15px] font-semibold text-white transition hover:opacity-90 font-['Poppins',sans-serif]"
           >
             Get a Free Quote
           </button>

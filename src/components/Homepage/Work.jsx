@@ -610,7 +610,7 @@ export default function Work() {
           </p>
 
           <a
-            href="mailto:bspxstudio@gmail.com"
+            href="mailto:TrueLifeGlobal@gmail.com"
             className="inline-flex w-full items-center justify-center gap-3 bg-[#0A0A0A] px-6 py-4 font-['Montserrat',sans-serif] text-[10px] font-semibold uppercase tracking-wider text-white shadow-2xl transition-all duration-300 hover:bg-[#FF7A00] active:scale-95 sm:w-auto sm:px-10 sm:text-xs"
           >
             <Mail className="h-4 w-4" />

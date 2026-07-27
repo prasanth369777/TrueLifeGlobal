@@ -6,6 +6,8 @@ import About from '../Homepage/About';
 import Howweworks from '../Homepage/How We Work'
 import Infinityscroll from '../Homepage/infinityscrolling';
 import Whyus from '../Homepage/Whyus';
+import Careers from './Career';
+import TrustedByBusinesses from './Trusted by Businesses Worldwide';
 
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
       <Services />
       <Howweworks />
       <Whyus />
+      <Careers />
+      <TrustedByBusinesses />
     
     </div>
   );
