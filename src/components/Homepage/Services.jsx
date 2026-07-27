@@ -66,13 +66,14 @@ const workSteps = [
 export default function ServicesAndProcess() {
   return (
     <section className="w-full overflow-hidden bg-slate-50 text-slate-900 py-32 lg:py-44 font-['Inter','Poppins',sans-serif]">
-      <div className="w-full px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+      {/* ================= CONTAINER (Matches consistent max-w-[104rem] width) ================= */}
+      <div className="max-w-[104rem] mx-auto px-6 md:px-16 flex flex-col items-center">
         
         {/* ================= SECTION 1: OUR SERVICES (OPEN CANVAS NO-BOX EDITORIAL LAYOUT) ================= */}
-        <div className="mb-48">
+        <div className="w-full mb-48">
           
-          {/* Section Header */}
-          <div className="mb-24 max-w-5xl border-l-8 pl-8" style={{ borderColor: "#207dd6" }}>
+          {/* Section Header (Centered) */}
+          <div className="mb-28 w-full flex flex-col items-center text-center">
             <span 
               style={{ color: "#207dd6", backgroundColor: "rgba(32, 125, 214, 0.08)" }}
               className="mb-6 inline-flex items-center gap-2 px-5 py-2 text-sm font-bold uppercase tracking-[0.3em] font-['Poppins',sans-serif]"
@@ -85,13 +86,13 @@ export default function ServicesAndProcess() {
                 Tailored for Singapore Enterprises.
               </span>
             </h2>
-            <p className="text-xl md:text-3xl text-slate-700 leading-relaxed font-medium">
+            <p className="text-xl md:text-3xl text-slate-700 leading-relaxed font-medium max-w-4xl">
               Compliant, dependable financial architecture and logistical support aligned directly with ACRA and IRAS frameworks.
             </p>
           </div>
 
           {/* Open Modern Grid (No Outer Background Boxes/Rectangles) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20">
             {services.map((service) => (
               <div
                 key={service.id}
@@ -135,7 +136,7 @@ export default function ServicesAndProcess() {
                     <span>Enquire Securely</span>
                     <ArrowRight className="h-5 w-5" />
                   </a>
-                  <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Verified SG Protocol</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-slate-400 font-['Poppins',sans-serif]">Verified SG Protocol</span>
                 </div>
               </div>
             ))}
@@ -143,9 +144,9 @@ export default function ServicesAndProcess() {
         </div>
 
         {/* ================= SECTION 2: HOW WE WORK (CLEAN OPEN WORKFLOW STREAM) ================= */}
-        <div>
+        <div className="w-full">
           
-          <div className="mb-20 max-w-4xl">
+          <div className="mb-24 w-full flex flex-col items-center text-center">
             <span 
               style={{ color: "#207dd6", backgroundColor: "rgba(32, 125, 214, 0.1)" }}
               className="mb-6 inline-flex items-center gap-2 px-5 py-2 text-sm font-bold uppercase tracking-[0.3em] font-['Poppins',sans-serif]"
@@ -155,13 +156,13 @@ export default function ServicesAndProcess() {
             <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 font-['Poppins',sans-serif]">
               Structured <span style={{ color: "#207dd6" }}>Engagement Model</span>
             </h2>
-            <p className="text-xl md:text-2xl text-slate-700 font-medium leading-relaxed">
+            <p className="text-xl md:text-2xl text-slate-700 font-medium leading-relaxed max-w-3xl">
               Our structured engagement model ensures seamless collaboration and exceptional results.
             </p>
           </div>
 
           {/* Open Layout Stepper Stream (No Containers/Rectangles) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {workSteps.map((item, index) => (
               <div 
                 key={index} 

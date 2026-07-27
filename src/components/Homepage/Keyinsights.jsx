@@ -1,27 +1,27 @@
 import React from "react";
-import { CheckmarkFilled, Security, Globe, ChartLine } from "@carbon/icons-react";
+import { Task, ChartLine, Calendar, UserAdmin } from "@carbon/icons-react";
 
-export default function TrustedByBusinesses() {
-  const trustItems = [
+export default function KeyInsights() {
+  const insights = [
     {
-      icon: CheckmarkFilled,
-      title: "Compliance Driven",
-      desc: "Regulatory excellence across all statutory frameworks.",
-    },
-    {
-      icon: Security,
-      title: "Confidentiality Assured",
-      desc: "Data protection guaranteed with strict institutional protocols.",
-    },
-    {
-      icon: Globe,
-      title: "Global Experience",
-      desc: "International expertise brought to local business operations.",
+      icon: Task,
+      title: "Compliance-First",
+      desc: "Every process designed with regulatory requirements at the core, ensuring your business meets all statutory obligations with confidence and precision.",
     },
     {
       icon: ChartLine,
-      title: "Process Excellence",
-      desc: "Best-in-class standards ensuring efficiency and precision.",
+      title: "Transparent Pricing",
+      desc: "Clear cost structures with no hidden fees or unexpected charges, providing complete financial clarity and predictable engagement costs.",
+    },
+    {
+      icon: Calendar,
+      title: "Monthly Discipline",
+      desc: "Consistent monthly close processes for reliable financial insights, timely reporting cycles, and proactive financial management.",
+    },
+    {
+      icon: UserAdmin,
+      title: "Personalized Service",
+      desc: "Tailored solutions that adapt to your unique business requirements, growth trajectory, and evolving compliance needs.",
     },
   ];
 
@@ -36,22 +36,22 @@ export default function TrustedByBusinesses() {
             style={{ color: "#207dd6", backgroundColor: "rgba(32, 125, 214, 0.08)" }}
             className="mb-6 inline-flex items-center gap-2 px-5 py-2 text-sm font-bold uppercase tracking-[0.3em] font-['Poppins',sans-serif]"
           >
-            Global Standards
+            Key Insights
           </span>
           <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.08] mb-8 font-['Poppins',sans-serif]">
-            Trusted by Businesses <br />
+            What sets us apart in the <br />
             <span style={{ color: "#207dd6" }} className="underline decoration-blue-200 decoration-wavy underline-offset-8">
-              Worldwide.
+              Accounting & Advisory Landscape.
             </span>
           </h2>
-          <p className="text-xl md:text-3xl text-slate-700 leading-relaxed font-light max-w-3xl">
-            Our commitment to excellence drives everything we do.
+          <p className="text-xl md:text-3xl text-slate-700 leading-relaxed font-medium max-w-4xl">
+            Our commitment to excellence drives everything we do for Singapore enterprises.
           </p>
         </div>
 
-        {/* ================= OPEN CANVAS TRUST PILLARS (NO BG RECTANGLES) ================= */}
+        {/* ================= OPEN CANVAS SQUARE PILLARS (NO BG RECTANGLES) ================= */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
-          {trustItems.map((item, index) => {
+          {insights.map((item, index) => {
             const Icon = item.icon;
             return (
               <div 
@@ -62,19 +62,19 @@ export default function TrustedByBusinesses() {
                 <div>
                   <div 
                     style={{ backgroundColor: "rgba(32, 125, 214, 0.1)", color: "#207dd6" }}
-                    className="mb-8 flex h-16 w-16 items-center justify-center"
+                    className="mb-8 flex h-16 w-16 items-center justify-center rounded-none"
                   >
                     <Icon className="h-8 w-8" />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4 font-['Poppins',sans-serif]">
                     {item.title}
                   </h3>
-                  <p className="text-lg leading-relaxed text-slate-700 font-light">
+                  <p className="text-lg leading-relaxed text-slate-700 font-medium">
                     {item.desc}
                   </p>
                 </div>
                 <div style={{ color: "#207dd6" }} className="mt-12 pt-6 border-t border-slate-200 text-sm font-bold uppercase tracking-widest font-['Poppins',sans-serif]">
-                  Global Standard 0{index + 1}
+                  Key Insight 0{index + 1}
                 </div>
               </div>
             );

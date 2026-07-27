@@ -4,13 +4,14 @@ import Person1 from "../../assests/team/herosection/person1.png";
 export default function HowWeWork() {
   return (
     <section id="director" className="w-full bg-white text-slate-900 py-32 lg:py-44 font-['Inter','Poppins',sans-serif]">
-      <div className="w-full px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+      {/* ================= CONTAINER (Matches consistent max-w-[104rem] width) ================= */}
+      <div className="max-w-[104rem] mx-auto px-6 md:px-16 flex flex-col items-center">
         
         {/* ================= EDITORIAL LEADERSHIP SECTION (NO CIRCLE, SHARP MODERN ARCHITECTURAL STYLE) ================= */}
-        <div>
+        <div className="w-full">
           
-          {/* Section Header */}
-          <div className="mb-24 text-center">
+          {/* Section Header (Centered) */}
+          <div className="mb-24 w-full flex flex-col items-center text-center">
             <span 
               style={{ backgroundColor: "rgba(32, 125, 214, 0.08)", color: "#207dd6" }}
               className="inline-flex items-center gap-2 px-5 py-2 text-xs font-bold uppercase tracking-[0.3em] font-['Poppins',sans-serif] mb-4"

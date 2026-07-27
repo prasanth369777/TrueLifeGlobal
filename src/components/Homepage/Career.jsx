@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Email, Task, Enterprise, UserAdmin} from "@carbon/icons-react";
+import { ArrowRight, Email, Task, Enterprise, UserAdmin } from "@carbon/icons-react";
 
 export default function Careers() {
   const careerHighmediums = [
@@ -35,10 +35,11 @@ export default function Careers() {
 
   return (
     <section id="careers" className="w-full bg-slate-50 text-slate-900 py-32 lg:py-44 font-['Inter','Poppins',sans-serif]">
-      <div className="w-full px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+      {/* ================= CONTAINER (Matches consistent max-w-[104rem] width) ================= */}
+      <div className="max-w-[104rem] mx-auto px-6 md:px-16 flex flex-col items-center">
         
-        {/* ================= HEADER SECTION ================= */}
-        <div className="mb-28 max-w-5xl border-l-8 pl-8" style={{ borderColor: "#207dd6" }}>
+        {/* ================= HEADER SECTION (CENTERED) ================= */}
+        <div className="mb-28 w-full flex flex-col items-center text-center">
           <span 
             style={{ color: "#207dd6", backgroundColor: "rgba(32, 125, 214, 0.08)" }}
             className="mb-6 inline-flex items-center gap-2 px-5 py-2 text-sm font-bold uppercase tracking-[0.3em] font-['Poppins',sans-serif]"
@@ -51,14 +52,14 @@ export default function Careers() {
               Pte. Ltd.
             </span>
           </h2>
-          <p className="text-xl md:text-3xl text-slate-700 leading-relaxed font-medium">
+          <p className="text-xl md:text-3xl text-slate-700 leading-relaxed font-medium max-w-4xl">
             A place to grow, learn, and build a meaningful career backed by real-world Singapore business exposure.
           </p>
         </div>
 
         {/* ================= EDITORIAL CONTENT SPLIT ================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 mb-40 items-start">
-          <div className="lg:col-span-5">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 mb-40 items-start">
+          <div className="lg:col-span-5 text-center lg:text-left">
             <h3 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight font-['Poppins',sans-serif]">
               More than a job, it's an opportunity.
             </h3>
@@ -80,13 +81,13 @@ export default function Careers() {
           </div>
         </div>
 
-        {/* ================= CAREER HIGHmediumS (OPEN CANVAS CARDS) ================= */}
-        <div className="mb-40">
+        {/* ================= CAREER HIGHMEDIUMS (OPEN CANVAS CARDS) ================= */}
+        <div className="w-full mb-40">
           <div className="mb-16 border-b border-slate-300 pb-6 flex items-baseline justify-between">
             <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 font-['Poppins',sans-serif]">
               Why Build Your Career With Us
             </h3>
-            <span className="text-sm font-bold uppercase tracking-widest text-slate-500">Growth & Development</span>
+            <span className="text-sm font-bold uppercase tracking-widest text-slate-500 font-['Poppins',sans-serif]">Growth & Development</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -112,7 +113,7 @@ export default function Careers() {
                       {item.desc}
                     </p>
                   </div>
-                  <div style={{ color: "#207dd6" }} className="mt-12 pt-6 border-t border-slate-100 text-sm font-bold uppercase tracking-widest">
+                  <div style={{ color: "#207dd6" }} className="mt-12 pt-6 border-t border-slate-100 text-sm font-bold uppercase tracking-widest font-['Poppins',sans-serif]">
                     True Life Pathway
                   </div>
                 </div>
@@ -122,7 +123,7 @@ export default function Careers() {
         </div>
 
         {/* ================= APPLY / GET IN TOUCH CTA BAR ================= */}
-        <div className="border-t border-b border-slate-300 py-20 flex flex-col lg:flex-row items-center justify-between gap-12 bg-white px-10 shadow-sm">
+        <div className="w-full border-t border-b border-slate-300 py-20 flex flex-col lg:flex-row items-center justify-between gap-12 bg-white px-10 shadow-sm text-center lg:text-left">
           <div>
             <span style={{ color: "#207dd6" }} className="text-sm font-bold uppercase tracking-[0.3em] block mb-3 font-['Poppins',sans-serif]">
               Join Our Team
@@ -135,7 +136,7 @@ export default function Careers() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-5 shrink-0 w-full lg:w-auto">
+          <div className="flex flex-col sm:flex-row gap-5 shrink-0 w-full lg:w-auto justify-center">
             <button
               type="button"
               onClick={() => scrollToSection("contact")}

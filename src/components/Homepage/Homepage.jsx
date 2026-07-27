@@ -8,6 +8,10 @@ import Infinityscroll from '../Homepage/infinityscrolling';
 import Whyus from '../Homepage/Whyus';
 import Careers from './Career';
 import TrustedByBusinesses from './Trusted by Businesses Worldwide';
+import ClientTestimonials from './Client Testimonials';
+import KeyInsights from './Keyinsights';
+import FAQ from './FAQ';
+import Contact from './Contact';
 
 
 export default function Home() {
@@ -22,6 +26,10 @@ export default function Home() {
       <Whyus />
       <Careers />
       <TrustedByBusinesses />
+      <ClientTestimonials />
+      <KeyInsights />
+      <FAQ />
+      <Contact />
     
     </div>
   );

@@ -96,10 +96,11 @@ export default function WhyUs() {
 
   return (
     <section id="why-us" className="w-full bg-slate-50 text-slate-900 py-32 lg:py-44 font-['Inter','Poppins',sans-serif]">
-      <div className="w-full px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+      {/* ================= CONTAINER (Matches consistent max-w-[104rem] width) ================= */}
+      <div className="max-w-[104rem] mx-auto px-6 md:px-16 flex flex-col items-center">
         
-        {/* ================= HEADER SECTION ================= */}
-        <div className="mb-32 max-w-5xl">
+        {/* ================= HEADER SECTION (CENTERED) ================= */}
+        <div className="mb-32 w-full flex flex-col items-center text-center">
           <span 
             style={{ backgroundColor: "rgba(32, 125, 214, 0.08)", color: "#207dd6" }}
             className="mb-6 inline-flex items-center gap-2 px-5 py-2 text-sm font-bold uppercase tracking-[0.3em] font-['Poppins',sans-serif]"
@@ -112,18 +113,18 @@ export default function WhyUs() {
               Business Success in Singapore.
             </span>
           </h2>
-          <p className="text-xl md:text-3xl text-slate-700 leading-relaxed font-medium">
+          <p className="text-xl md:text-3xl text-slate-700 leading-relaxed font-medium max-w-4xl">
             A Singapore-registered company delivering trusted financial expertise and reliable courier support for modern businesses.
           </p>
         </div>
 
         {/* ================= CORE STRENGTHS ================= */}
-        <div className="mb-40">
+        <div className="w-full mb-40">
           <div className="mb-16 border-b border-slate-300 pb-6 flex items-baseline justify-between">
             <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 font-['Poppins',sans-serif]">
               Our Core Strengths
             </h3>
-            <span className="text-sm font-bold uppercase tracking-widest text-slate-500">Pillars of Excellence</span>
+            <span className="text-sm font-bold uppercase tracking-widest text-slate-500 font-['Poppins',sans-serif]">Pillars of Excellence</span>
           </div>
 
           <div className="space-y-24">
@@ -169,12 +170,12 @@ export default function WhyUs() {
         </div>
 
         {/* ================= COMPETITIVE ADVANTAGES ================= */}
-        <div className="mb-40">
+        <div className="w-full mb-40">
           <div className="mb-16 border-b border-slate-300 pb-6 flex items-baseline justify-between">
             <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 font-['Poppins',sans-serif]">
               Our Competitive Advantages
             </h3>
-            <span className="text-sm font-bold uppercase tracking-widest text-slate-500">Core Capabilities</span>
+            <span className="text-sm font-bold uppercase tracking-widest text-slate-500 font-['Poppins',sans-serif]">Core Capabilities</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -196,7 +197,7 @@ export default function WhyUs() {
                       {adv.desc}
                     </p>
                   </div>
-                  <div style={{ color: "#207dd6" }} className="mt-10 pt-6 border-t border-slate-100 text-sm font-bold uppercase tracking-widest">
+                  <div style={{ color: "#207dd6" }} className="mt-10 pt-6 border-t border-slate-100 text-sm font-bold uppercase tracking-widest font-['Poppins',sans-serif]">
                     True Life Standard
                   </div>
                 </div>
@@ -206,12 +207,12 @@ export default function WhyUs() {
         </div>
 
         {/* ================= WHAT SETS US APART ================= */}
-        <div className="mb-20">
+        <div className="w-full mb-20">
           <div className="mb-16 border-b border-slate-300 pb-6 flex items-baseline justify-between">
             <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 font-['Poppins',sans-serif]">
               What Sets Us Apart
             </h3>
-            <span className="text-sm font-bold uppercase tracking-widest text-slate-500">Distinctive Approach</span>
+            <span className="text-sm font-bold uppercase tracking-widest text-slate-500 font-['Poppins',sans-serif]">Distinctive Approach</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -234,7 +235,7 @@ export default function WhyUs() {
                       {diff.desc}
                     </p>
                   </div>
-                  <div style={{ color: "#207dd6" }} className="mt-12 pt-6 border-t border-slate-200 text-sm font-bold uppercase tracking-widest">
+                  <div style={{ color: "#207dd6" }} className="mt-12 pt-6 border-t border-slate-200 text-sm font-bold uppercase tracking-widest font-['Poppins',sans-serif]">
                     Executive Excellence
                   </div>
                 </div>
